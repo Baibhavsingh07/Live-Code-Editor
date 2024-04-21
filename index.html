@@ -3,7 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Live Code Editor</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="left">
+        <label>HTML</label>
+        <textarea id="html-code"></textarea>
+        <label>CSS</label>
+        <textarea id="css-code"></textarea>
+        <label>JS</label>
+        <textarea id="js-code"></textarea>
+      </div>
+      <div class="right">
+        <iframe id="output"></iframe>
+      </div>
+    </div>
+  </body>
 </html>
