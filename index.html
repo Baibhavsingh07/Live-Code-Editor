@@ -14,16 +14,26 @@
     <div class="container">
       <div class="left">
         <label>HTML<i class="fa-brands fa-html5"></i></label>
-        <textarea id="html-code"></textarea>
+        <textarea id="html-code" onkeypress="run()"></textarea>
         <label>CSS<i class="fa-brands fa-css3-alt"></i></label>
-        <textarea id="css-code"></textarea>
+        <textarea id="css-code" onkeypress="run()"></textarea>
         <label>JS<i class="fa-brands fa-js"></i></label>
-        <textarea id="js-code"></textarea>
+        <textarea id="js-code" onkeypress="run()"></textarea>
       </div>
       <div class="right">
         <label><i class="fa-duotone fa-play"></i>OUTPUT</label>
         <iframe id="output"></iframe>
       </div>
     </div>
+    <script>
+      function run() {
+        let htmlCode = document.getElementById("html-code").value;
+        let cssCode = document.getElementById("css-code").value;
+        let jsCode = document.getElementById("js-code").value;
+        let output = document.getElementById("output");
+
+        output.contentDocument.body.innerHTML = htmlCode;
+      }
+    </script>
   </body>
 </html>
