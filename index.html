@@ -10,13 +10,16 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body onmouseover="run()" on>
     <div class="container">
       <div class="left">
         <label>HTML<i class="fa-brands fa-html5"></i></label>
-        <textarea id="html-code" onkeypress="run()"></textarea>
+        <textarea id="html-code" onkeypress="run()" onchange="run()">
+<h1>
+Welcome to the Live Editor</h1></textarea
+        >
         <label>CSS<i class="fa-brands fa-css3-alt"></i></label>
-        <textarea id="css-code" onkeypress="run()"></textarea>
+        <textarea id="css-code" onkeypress="run()">h1{color:yellow}</textarea>
         <label>JS<i class="fa-brands fa-js"></i></label>
         <textarea id="js-code" onkeypress="run()"></textarea>
       </div>
